@@ -1,0 +1,31 @@
+.home-block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: url("./../../assets/home-page-bg.png") no-repeat;
+  background-size: 100% 100%;
+
+  &__content {
+    max-width: 936px;
+    display: flex;
+    background: rgba(255, 255, 255, 0.7);
+    margin-top: 289px;
+    margin-bottom: 360px;
+    padding: 87px 114px 84px 113px;
+    border-radius: 16px;
+
+    & p {
+      font-size: 25px;
+      line-height: 37px;
+      font-family: "Oswald", sans-serif;
+      text-transform: uppercase;
+      color: #767676;
+    }
+  }
+
+  &__button {
+    width: 529px;
+    height: 92px;
+    margin-bottom: 200px;
+  }
+}
