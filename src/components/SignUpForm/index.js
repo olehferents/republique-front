@@ -63,7 +63,7 @@ const SignUpForm = () => {
             <div className="sign-up-form__auth">
                 <div>
                     <FacebookLogin
-                        appId={747520032811641}
+                        appId={`${process.env.REACT_APP_API_URL_FACEBOOK_APP_ID}`}
                         fields="name,email"
                         callback={(response) => console.log(response)}
                         textButton="Sign In with Facebook"
@@ -73,7 +73,7 @@ const SignUpForm = () => {
                 </div>
                 <div>
                     <GoogleLogin
-                        clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
+                        clientId={`${process.env.REACT_APP_GOOGLE_CLIENT_ID}`}
                         render={renderProps => (
                             <button className="sign-up-form__social sign-up-form__social__google"
                                     onClick={renderProps.onClick} disabled={renderProps.disabled}>

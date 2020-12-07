@@ -1,0 +1,49 @@
+.tree-animation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+
+  &__image {
+    width: auto;
+    height: 100vh;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 18px;
+    width: 260px;
+  }
+
+  &__prev, &__next {
+    position: absolute;
+    width: 90px;
+    cursor: pointer;
+  }
+
+  &__prev {
+    left: 20%;
+  }
+
+  &__next {
+    right: 20%;
+  }
+}
+
+@media screen and (max-width: 692px) {
+  .tree-animation {
+    &__prev, &__next {
+      width: 50px;
+    }
+
+    &__prev {
+      left: 10%;
+    }
+
+    &__next {
+      right: 10%;
+    }
+  }
+}
+
