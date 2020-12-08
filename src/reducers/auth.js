@@ -1,4 +1,4 @@
-import {FAILED, REQUEST, SIGN_IN, SIGN_UP, SUCCESS} from "../actionTypes";
+import {CLEAR_AUTH, FAILED, REQUEST, SIGN_IN, SIGN_UP, SUCCESS} from "../actionTypes";
 
 const initialState = {
     isLoading: false,
@@ -43,11 +43,18 @@ export const auth = (state = initialState, {type, payload}) => {
                 isSignedIn: false,
                 error: payload.message,
             }
+        case CLEAR_AUTH + SUCCESS:
+            return {
+                ...state,
+                isSignedUp: null,
+                isSignedIn: null,
+                error: null,
+            }
         default:
             return state;
     }
 }
 
 export const getIsLoading = (state) => state.auth.isLoading;
-export const getIsisSignedUp = (state) => state.auth.isSignedUp;
+export const getIsSignedUp = (state) => state.auth.isSignedUp;
 export const getError = (state) => state.auth.error;

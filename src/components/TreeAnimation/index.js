@@ -58,6 +58,8 @@ import arrowLeft from './../../assets/arrow-left.png';
 import arrowRight from './../../assets/arrow-right.png';
 import OfferModal from "../OfferModal";
 import ImageMapper from "react-image-mapper";
+import {useDispatch} from "react-redux";
+import {CLEAR_AUTH, SUCCESS} from "../../actionTypes";
 
 const TreeAnimation = () => {
     const MAP1 = {
@@ -71,12 +73,16 @@ const TreeAnimation = () => {
             }
         ]
     }
-
+    const dispatch = useDispatch();
     const [currentFrameIndex, setCurrentFrameIndex] = useState(0);
     const [direction, setDirection] = useState('next');
     const [image, setImage] = useState(frame0);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [map, setMap] = useState(MAP1);
+
+    useEffect(() => {
+        dispatch({type: CLEAR_AUTH + SUCCESS});
+    }, [])
 
     useEffect(() => {
         if (direction === 'next') {

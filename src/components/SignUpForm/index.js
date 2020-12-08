@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './index.scss';
 import Header from "../Header";
 import {useForm} from "react-hook-form";
@@ -7,13 +7,21 @@ import FacebookLogin from 'react-facebook-login';
 import {GoogleLogin} from 'react-google-login';
 import { useHistory } from "react-router-dom";
 import Button from "../Button";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {signUp} from "../../actions/auth";
+import {getIsSignedUp} from "../../reducers/auth";
 
 const SignUpForm = () => {
     const history = useHistory();
     const dispatch = useDispatch();
     const {register, handleSubmit, errors} = useForm();
+    const isSignedUp = useSelector(getIsSignedUp);
+
+    useEffect(() => {
+        if(isSignedUp) {
+            history.push('/calendar');
+        }
+    }, [isSignedUp])
 
     const handleAuth = (data) => {
         dispatch(signUp(data));
@@ -63,7 +71,7 @@ const SignUpForm = () => {
             <div className="sign-up-form__auth">
                 <div>
                     <FacebookLogin
-                        appId={`${process.env.REACT_APP_API_URL_FACEBOOK_APP_ID}`}
+                        appId={process.env.REACT_APP_FACEBOOK_APP_ID}
                         fields="name,email"
                         callback={(response) => console.log(response)}
                         textButton="Sign In with Facebook"
