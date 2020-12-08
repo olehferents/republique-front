@@ -13,7 +13,6 @@
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     color: #e9e9e9;
-    margin-top: 180px;
   }
 
   &__text {
@@ -37,7 +36,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: 200px;
-    margin-top: 179px;
+    margin-top: 90px;
   }
 
   &__field {
@@ -94,5 +93,52 @@
     height: 86px;
     margin-top: 150px;
     margin-bottom: 200px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sign-up-form {
+    width: 1024px;
+
+    &__heading {
+      width: 577px;
+      font-size: 25px;
+      margin-top: 88px;
+    }
+
+    &__auth {
+      width: 375px;
+    }
+
+    &__button {
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 946px) {
+  .sign-up-form {
+    width: 100%;
+
+    &__field {
+      width: 500px;
+    }
+  }
+}
+
+@media screen and (max-width: 606px) {
+  .sign-up-form {
+    &__heading {
+      width: 455px;
+    }
+
+    &__field {
+      width: 430px;
+    }
+
+    &__button {
+      width: 430px;
+    }
   }
 }

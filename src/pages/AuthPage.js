@@ -3,9 +3,9 @@ import SignUpForm from "../components/SignUpForm";
 
 const AuthPage = () => {
     return (
-        <div>
+        <>
             <SignUpForm />
-        </div>
+        </>
     );
 };
 

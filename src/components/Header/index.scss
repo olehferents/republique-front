@@ -5,6 +5,25 @@
   width: 100%;
 
   &__logo {
-    margin-top: 170px;
+    margin-top: 50px;
+    width: 320px;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .header {
+    &__logo {
+      margin-top: 50px;
+      width: 400px;
+    }
+  }
+}
+
+@media screen and (max-width: 709px) {
+  .header {
+    &__logo {
+      width: 200px;
+    }
+  }
+}
+

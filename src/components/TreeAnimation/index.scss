@@ -34,14 +34,16 @@
     display: none;
   }
 
-  & > div:first-of-type {
+  &__swiper {
     position: static !important;
     width: auto !important;
     height: 100vh !important;
 
-    & > img {
-      position: static !important;
-      height: 100vh !important;
+    & > div {
+      & > img {
+        position: static !important;
+        height: 100vh !important;
+      }
     }
   }
 }

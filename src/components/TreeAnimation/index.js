@@ -60,6 +60,7 @@ import OfferModal from "../OfferModal";
 import ImageMapper from "react-image-mapper";
 import {useDispatch} from "react-redux";
 import {CLEAR_AUTH, SUCCESS} from "../../actionTypes";
+import {Swipe} from "react-swipe-component";
 
 const TreeAnimation = () => {
     const MAP1 = {
@@ -87,7 +88,7 @@ const TreeAnimation = () => {
     useEffect(() => {
         if (direction === 'next') {
             if (currentFrameIndex === 10) {
-                setImage(frame0);
+                setImage([`frame${0}`]);
                 setTimeout(() => {
                     setImage(frame1);
                 }, 100);
@@ -436,10 +437,11 @@ const TreeAnimation = () => {
         <div className="tree-animation">
             <img src={logo} className="tree-animation__logo" alt=""/>
             <img src={left} className="tree-animation__image" alt=""/>
-            {/*<img src={image} className="tree-animation__image" alt=""/>*/}
-            <ImageMapper src={image} map={map} width={650} height={900} onClick={() => {
-                setIsModalOpen(true);
-            }}/>
+            <Swipe detectTouch={true} onSwipedLeft={handleNext} onSwipedRight={handlePrev} className="tree-animation__swiper">
+                <ImageMapper src={image} map={map} width={650} height={900} onClick={() => {
+                    setIsModalOpen(true);
+                }}/>
+            </Swipe>
             {isModalOpen && (
                 <OfferModal
                     text="If you want to make an entrance and love a bit of 'drama', then look no further than our all-over ostrich feather puffball dress. Don't panic tho….no real ostrich's were harmed in the making of this outfit - get the virtual look without the animal cruelty today with xxx% off"

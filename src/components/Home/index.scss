@@ -4,13 +4,14 @@
   flex-direction: column;
   background: url("./../../assets/home-page-bg.png") no-repeat;
   background-size: 100% 100%;
+  height: 100vh;
+  justify-content: space-around;
 
   &__content {
     max-width: 936px;
     display: flex;
     background: rgba(255, 255, 255, 0.7);
-    margin-top: 289px;
-    margin-bottom: 360px;
+    margin-top: 60px;
     padding: 87px 114px 84px 113px;
     border-radius: 16px;
 
@@ -26,6 +27,38 @@
   &__button {
     width: 529px;
     height: 92px;
-    margin-bottom: 200px;
+    margin-top: 110px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .home-block {
+    &__content {
+      width: 600px;
+      padding: 40px;
+    }
+
+    &__button {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 709px) {
+  .home-block {
+    &__content {
+      width: 364px;
+      margin-top: 40px;
+      padding: 20px;
+
+      & p {
+        font-size: 17px;
+        line-height: 33px;
+      }
+    }
+
+    &__button {
+      width: 400px;
+    }
   }
 }
