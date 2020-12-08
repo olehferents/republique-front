@@ -57,12 +57,26 @@ import logo from './../../assets/logo_republiqe.png';
 import arrowLeft from './../../assets/arrow-left.png';
 import arrowRight from './../../assets/arrow-right.png';
 import OfferModal from "../OfferModal";
+import ImageMapper from "react-image-mapper";
 
 const TreeAnimation = () => {
+    const MAP1 = {
+        name: 'calendar',
+        areas: [
+            {
+                name: '1',
+                shape: 'poly',
+                coords: [262, 575, 288, 446, 359, 447, 385, 575],
+                fillColor: '',
+            }
+        ]
+    }
+
     const [currentFrameIndex, setCurrentFrameIndex] = useState(0);
     const [direction, setDirection] = useState('next');
     const [image, setImage] = useState(frame0);
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [map, setMap] = useState(MAP1);
 
     useEffect(() => {
         if (direction === 'next') {
@@ -416,10 +430,13 @@ const TreeAnimation = () => {
         <div className="tree-animation">
             <img src={logo} className="tree-animation__logo" alt=""/>
             <img src={left} className="tree-animation__image" alt=""/>
-            <img src={image} className="tree-animation__image" alt=""/>
+            {/*<img src={image} className="tree-animation__image" alt=""/>*/}
+            <ImageMapper src={image} map={map} width={650} height={900} onClick={() => {
+                setIsModalOpen(true);
+            }}/>
             {isModalOpen && (
                 <OfferModal
-                    text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, sed!"
+                    text="If you want to make an entrance and love a bit of 'drama', then look no further than our all-over ostrich feather puffball dress. Don't panic tho….no real ostrich's were harmed in the making of this outfit - get the virtual look without the animal cruelty today with xxx% off"
                     price={99.9}
                     closeAction={() => setIsModalOpen(false)}
                 />)}

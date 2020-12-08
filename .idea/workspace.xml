@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d09ec7e1-85e2-4777-8835-d563cb205eff" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SignUpForm/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SignUpForm/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TreeAnimation/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TreeAnimation/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TreeAnimation/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TreeAnimation/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +82,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607359889469</updated>
-      <workItem from="1607359890987" duration="24813000" />
+      <workItem from="1607359890987" duration="27309000" />
+      <workItem from="1607408165787" duration="680000" />
     </task>
     <servers />
   </component>
@@ -101,5 +100,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

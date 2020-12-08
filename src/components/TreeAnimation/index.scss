@@ -29,6 +29,21 @@
   &__next {
     right: 20%;
   }
+
+  & canvas {
+    display: none;
+  }
+
+  & > div:first-of-type {
+    position: static !important;
+    width: auto !important;
+    height: 100vh !important;
+
+    & > img {
+      position: static !important;
+      height: 100vh !important;
+    }
+  }
 }
 
 @media screen and (max-width: 692px) {
