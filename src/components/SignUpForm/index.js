@@ -94,7 +94,7 @@ const SignUpForm = () => {
                 </div>
             </div>
             <h1 className="sign-up-form__text">
-                for t&cs, please <span onClick={() => history.push('/description')}>click here</span>
+                for t&cs, please <span>click here</span>
             </h1>
             <div className="sign-up-form__button">
                 <Button text="Enter" action={handleSubmit(handleAuth)} />
