@@ -64,6 +64,14 @@
       width: 0;
     }
 
+    &__prev {
+      left: 5%;
+    }
+
+    &__next {
+      right: 5%;
+    }
+
     &__logo {
       top: 80px;
     }
@@ -97,7 +105,7 @@
 
 .image-map__content span {
   &:hover {
-    //background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.7);
     cursor: pointer;
   }
 }

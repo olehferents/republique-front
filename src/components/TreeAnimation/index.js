@@ -329,7 +329,6 @@ const TreeAnimation = () => {
                 }, 600);
             } else {
                 setImage(frame0);
-                setMap([]);
             }
         } else if (direction === 'prev') {
             if (currentFrameIndex === 0) {
@@ -495,7 +494,6 @@ const TreeAnimation = () => {
                 }, 600);
             } else {
                 setImage(frame0);
-                setMap(map1);
             }
         }
     }, [currentFrameIndex]);

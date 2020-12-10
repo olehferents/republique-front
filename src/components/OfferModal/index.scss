@@ -3,7 +3,8 @@
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 77px;
+  top: 50%;
+  transform: translate(0, -50%);
   margin-bottom: 300px;
 
   &__modal {
@@ -40,6 +41,20 @@
       font-family: "Oswald", sans-serif;
       text-transform: uppercase;
       color: #767676;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .offer {
+    &__modal {
+      &__text {
+        font-size: 19px;
+      }
+
+      &__image {
+        width: 460px;
+      }
     }
   }
 }

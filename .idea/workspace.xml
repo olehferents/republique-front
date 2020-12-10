@@ -4,14 +4,9 @@
     <list default="true" id="d09ec7e1-85e2-4777-8835-d563cb205eff" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Button/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/OfferModal/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/OfferModal/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/OfferModal/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/OfferModal/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/TreeAnimation/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TreeAnimation/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/TreeAnimation/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TreeAnimation/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +101,8 @@
       <workItem from="1607444025634" duration="164000" />
       <workItem from="1607452377471" duration="7497000" />
       <workItem from="1607511059501" duration="4000" />
-      <workItem from="1607545207313" duration="13544000" />
+      <workItem from="1607545207313" duration="13922000" />
+      <workItem from="1607585698759" duration="1085000" />
     </task>
     <servers />
   </component>
