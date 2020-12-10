@@ -14,6 +14,7 @@
     position: absolute;
     top: 18px;
     width: 260px;
+    z-index: 1;
   }
 
   &__prev, &__next {
@@ -31,7 +32,7 @@
   }
 
   & canvas {
-    display: none;
+    //display: none;
   }
 
   &__swiper {
@@ -43,6 +44,36 @@
       & > img {
         position: static !important;
         height: 100vh !important;
+        width: 600px;
+      }
+    }
+  }
+
+  &__hover-img {
+    opacity: 0.7;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .tree-animation {
+    &__image {
+      width: 0;
+    }
+
+    &__logo {
+      top: 80px;
+    }
+
+    &__swiper {
+      width: 100vw !important;
+      & > div {
+        & > img {
+          width: 100vw !important;
+        }
       }
     }
   }
@@ -61,6 +92,13 @@
     &__next {
       right: 10%;
     }
+  }
+}
+
+.image-map__content span {
+  &:hover {
+    //background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
   }
 }
 

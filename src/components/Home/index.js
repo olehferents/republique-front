@@ -24,7 +24,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="home-block__button">
-                <Button text="Enter" action={() => history.push('/signUp')} />
+                <Button text="Enter" action={() => history.push('/calendar')} />
             </div>
         </div>
     );

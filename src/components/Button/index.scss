@@ -4,7 +4,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #e0e0e2;
+  //background: #e0e0e2;
+  background: rgba(255, 255, 255, 0.7);
   border-radius: 10px;
   cursor: pointer;
 
@@ -14,5 +15,9 @@
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     color: #767676;
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 1);
   }
 }
